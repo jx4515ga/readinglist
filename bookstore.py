@@ -149,6 +149,8 @@ class BookStore:
 
 
         def delete_all_books(self):
+
+            
             """ Deletes all books from database """
 
             delete_all_sql = "DELETE FROM books"
