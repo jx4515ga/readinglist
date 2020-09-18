@@ -69,6 +69,13 @@ def change_read():
     new_read = ui.get_read_value()     
     book.read = new_read 
     book.save()
+#added a cconfirmation status to check if the bokk was read ot not
+    if new_read is False:
+        print('You haven\'t read ' + book.title + 'yet')
+
+    else:
+
+        print("You already have read "+ book.title + " by " + book.author)
     
 
 def quit_program():
