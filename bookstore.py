@@ -19,6 +19,7 @@ class Book:
 
 
     def save(self):
+        """if book has ID datebase will updated if its not there will be added """
         if self.id:
             self.bookstore._update_book(self)
         else:
