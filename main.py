@@ -76,7 +76,16 @@ def change_read():
     else:
 
         print("You already have read "+ book.title + " by " + book.author)
-    
+
+def delete_book():
+    try:
+        book_id = ui.get_book_id()
+        book = store.get_book_by_id(book_id)
+        book.delete()
+        print("\n Book" + book.tittle + " was deleted!") 
+
+    except:
+        print("\nError. Book not found. Try again")   
 
 def quit_program():
     ui.message('Thanks and bye!')
