@@ -27,6 +27,7 @@ def create_menu():
     menu.add_option('4', 'Show Read Books', show_read_books)
     menu.add_option('5', 'Show All Books', show_all_books)
     menu.add_option('6', 'Change Book Read Status', change_read)
+    menu.add_option('7', 'Delete Book', delete_book )
     menu.add_option('Q', 'Quit', quit_program)
 
     return menu
