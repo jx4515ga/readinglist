@@ -21,7 +21,7 @@ def main():
 
 def create_menu():
     menu = Menu()
-    menu.add_option('0', 'Delete Book', delete_book)
+    menu.add_option('9', 'Delete Book', delete_book)
     menu.add_option('1', 'Add Book', add_book)
     menu.add_option('2', 'Search For Book', search_book)
     menu.add_option('3', 'Show Unread Books', show_unread_books)
